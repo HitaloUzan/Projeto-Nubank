@@ -13,6 +13,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap"
         rel="stylesheet">
+    <script src="JS/svg-inject.min.js"></script>
 </head>
 
 <body>
@@ -22,34 +23,42 @@
         <!--========== NAVBAR MOBILE ==========-->
         <nav class="navbar-mobile">
             <div class="bx" id="bx"></div>
-            <div class="logo"></div>
-            <a href="">Login</a>
+            <div class="logo">
+                <a href="">
+                    <img src="SVG/logonu.svg" alt="Logo" onload="SVGInject(this)">
+                </a>
+            </div>
+            <a href="" class="login">Login</a>
         </nav>
 
         <!--========== NAVBAR DESKTOP ==========-->
         <nav class="navbar-desktop">
             <div class="navbar-desktop-item-1">
-                <div class="logo"></div>
+                <div class="logo">
+                    <a href="">
+                        <img src="SVG/logonu.svg" alt="Logo" onload="SVGInject(this)">
+                    </a>
+                </div>
                 <ul class="menu-desktop">
-                    <li class="menu-item">
+                    <li class="menu-item" id="menu-item-1">
                         <a href="" class="nav-link-desktop">Nubank</a>
-                        <ul class="dropdown-menu">
+                        <ul class="dropdown-menu" id="dropdown-item-1">
                             <li class="dropdown-item"><a href="" class="nav-link-dropdown">O Nu</a></li>
                             <li class="dropdown-item"><a href="" class="nav-link-dropdown">Carreiras</a></li>
                             <li class="dropdown-item"><a href="" class="nav-link-dropdown">Impressa</a></li>
                         </ul>
                     </li>
-                    <li class="menu-item">
+                    <li class="menu-item" id="menu-item-2">
                         <a href="" class="nav-link-desktop">Conta digital</a>
-                        <ul class="dropdown-menu">
+                        <ul class="dropdown-menu" id="dropdown-item-2">
                             <li class="dropdown-item"><a href="" class="nav-link-dropdown">Crie sua conta</a></li>
                             <li class="dropdown-item"><a href="" class="nav-link-dropdown">Transferências</a></li>
                             <li class="dropdown-item"><a href="" class="nav-link-dropdown">Rendimento</a></li>
                         </ul>
                     </li>
-                    <li class="menu-item">
+                    <li class="menu-item" id="menu-item-3">
                         <a href="" class="nav-link-desktop">Pra você</a>
-                        <ul class="dropdown-menu">
+                        <ul class="dropdown-menu" id="dropdown-item-3">
                             <li class="dropdown-item"><a href="" class="nav-link-dropdown">Comunidade</a></li>
                             <li class="dropdown-item"><a href="" class="nav-link-dropdown">Rewards</a></li>
                             <li class="dropdown-item"><a href="" class="nav-link-dropdown">Novidades</a></li>
@@ -65,13 +74,22 @@
         </nav>
 
         <!--========== Menu Mobile ==========-->
-        <nav class="menu-mobile">
+        <nav class="menu-mobile" id="menu-mobile">
             <ul class="nav-list-mobile">
                 <li><a href="" class="nav-link-mobile">Nubank</a></li>
                 <li><a href="" class="nav-link-mobile">Conta Digital</a></li>
                 <li><a href="" class="nav-link-mobile">Pra você</a></li>
                 <li><a href="" class="nav-link-mobile">Quero ser Nubank</a></li>
                 <li><a href="" class="nav-link-mobile">Redes socias</a></li>
+
+                <li>
+                    <a href="">
+                        <img src="SVG/icon-facebook.svg" alt="icon-facebook" onload="SVGInject(this)">
+                        <img src="SVG/icon-youtube.svg" alt="icon-youtube" onload="SVGInject(this)">
+                        <img src="SVG/icon-instagram.svg" alt="icon-instagram" onload="SVGInject(this)">
+                        <img src="SVG/icon-twitter.svg" alt="icon-twitter" onload="SVGInject(this)">
+                    </a>
+                </li>
             </ul>
         </nav>
     </header>
