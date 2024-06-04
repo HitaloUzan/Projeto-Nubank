@@ -106,7 +106,7 @@ $container-s: 540px;
 }
 
 // Width's
-.width-auto {
+.w-auto {
   width: auto;
 }
 .w-100 {
@@ -169,5 +169,55 @@ $container-s: 540px;
     display: block;
     width: 64px;
     height: 64px;
+  }
+}
+
+// Section Best
+
+.best {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  position: relative;
+
+  border-radius: 50px;
+
+  background-color: $white-normal;
+
+  @include responsive(s) {
+    flex-direction: column;
+  }
+
+  &::after {
+    content: "";
+    display: block;
+    position: absolute;
+
+    top: 0;
+    left: 50%;
+
+    transform: translate(-50%);
+
+    width: 124px;
+    height: 32px;
+
+    background-image: url(/SVG/entail.svg);
+    background-repeat: no-repeat;
+  }
+}
+
+.best-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+
+  padding: 16px;
+  margin: 8px 0px;
+
+  @include responsive(s) {
+    justify-content: center;
+    align-items: center;
   }
 }
