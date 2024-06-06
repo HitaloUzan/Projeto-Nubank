@@ -13,6 +13,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <script src="JS/svg-inject.min.js"></script>
 </head>
 
@@ -179,7 +180,7 @@
             </div>
             <div class="best-item flex-item-auto">
                 <img src="svg/icon-cash.svg" class="icon w-auto" onload="SVGInject(this)" />
-                <p class="mt-2 bold">Conta que rende mais que a poupança</p>
+                <p class="mt-2  bold">Conta que rende mais que a poupança</p>
             </div>
             <div class="best-item flex-item-auto">
                 <img src="svg/icon-transfer.svg" class="icon w-auto" onload="SVGInject(this)" />
@@ -196,8 +197,78 @@
         </div>
     </section>
 
+    <!-- Section Slider -->
+
+    <section class="box">
+        <h5>Depoimentos</h5>
+        <h2>Todos amam o roxinho</h2>
+    </section>
+    <section class="container-swiper">
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="photo-profile photo-1"></div>
+                    <h4 class="my-1">Jorge Silva</h4>
+                    <p class="my-1">Lorem ipsum dolor sit amet consectetur
+                        adipisicing elit. Sint aspernatur nesciunt
+                        eligendi esse.</p>
+                </div>
+                <div class="swiper-slide">
+                    <div class="photo-profile photo-2"></div>
+                    <h4 class="my-1">Anna Keller</h4>
+                    <p class="my-1">Lorem ipsum dolor sit amet consectetur
+                        adipisicing elit. Sint aspernatur nesciunt
+                        eligendi esse.</p>
+                </div>
+                <div class="swiper-slide">
+                    <div class="photo-profile photo-3"></div>
+                    <h4 class="my-1">Gabriela Shuzz</h4>
+                    <p class="my-1">Lorem ipsum dolor sit amet consectetur
+                        adipisicing elit. Sint aspernatur nesciunt
+                        eligendi esse.</p>
+                </div>
+                <div class="swiper-slide">
+                    <div class="photo-profile photo-4"></div>
+                    <h4 class="my-1">Lia Vieira</h4>
+                    <p class="my-1">Lorem ipsum dolor sit amet consectetur
+                        adipisicing elit. Sint aspernatur nesciunt
+                        eligendi esse.</p>
+                </div>
+                <div class="swiper-slide">
+                    <div class="photo-profile photo-5"></div>
+                    <h4 class="my-1">Théo Gomes</h4>
+                    <p class="my-1">Lorem ipsum dolor sit amet consectetur
+                        adipisicing elit. Sint aspernatur nesciunt
+                        eligendi esse.</p>
+                </div>
+            </div>
+        </div>
+        <div class="button-next"></div>
+        <div class="button-prev"></div>
+    </section>
+
+
     <!-- ======== JS ======= -->
+
     <script src="JS/app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <Script>
+        var swiper = new Swiper('.swiper-container', {
+            slidesPerView: 'auto',
+            spaceBeteween: 40,
+            grabCursor: true,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: 2,
+                type: 'progressbar',
+            },
+            navigation: {
+                nextEl: '.button-next',
+                prevEl: '.button-prev',
+            },
+        });
+    </Script>
 
 </body>
 
